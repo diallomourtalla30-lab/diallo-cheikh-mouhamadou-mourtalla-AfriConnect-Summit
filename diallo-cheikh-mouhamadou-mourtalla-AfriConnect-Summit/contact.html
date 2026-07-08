@@ -1,12 +1,401 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriConnect Summit</title>
+    <title>AfriConnectSummit</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="header" id="header">
+
+    <nav class="navbar" id="navbar">
+
+        <!-- Logo -->
+        <div class="navbar__logo">
+
+            <a href="index.html" class="logo-link">
+                <span class="logo-text">
+                    AfriConnect Summit 
+                </span>
+            </a>
+
+        </div>
+
+        <!-- Navigation -->
+        <ul class="navbar__menu" id="navbarMenu">
+
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link active">Accueil</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="programme.html" class="navbar__link">Programme</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="intervenants.html" class="navbar__link">Intervenants</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="contact.html" class="navbar__link">Contact</a>
+            </li>
+
+        </ul>
+
+        <!-- Actions -->
+        <div class="navbar__actions">
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Changer le thème">
+                🌙
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Ouvrir le menu">
+                ☰
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+        
+        <!-- 
+     HERO INTERNE
+ -->
+<section class="page-hero" id="pageHero">
+
+    <div class="page-hero__container">
+
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="index.html" class="breadcrumb__link">Accueil</a>
+            <span class="breadcrumb__separator">&gt;</span>
+            <span class="breadcrumb__current">Contact</span>
+        </nav>
+
+        <h1 class="page-hero__title">
+            Inscription & Contact
+        </h1>
+
+    </div>
+
+</section>
+
+<!-- 
+     INSCRIPTION
+-->
+<section class="registration" id="registration">
+
+    <div class="registration__container">
+
+        <!-- Formulaire -->
+        <div class="registration__form">
+
+            <h2 class="section-title">
+                Formulaire d'inscription
+            </h2>
+
+            <form class="form" id="registrationForm">
+
+                <div class="form-group">
+
+                    <label for="fullName" class="form-label">
+                        Nom complet
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        class="form-input"
+                    >
+
+                    <small class="form-error" id="fullNameError"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email" class="form-label">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-input"
+                    >
+
+                    <small class="form-error" id="emailError"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="phone" class="form-label">
+                        Téléphone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        class="form-input"
+                    >
+
+                    <small class="form-error" id="phoneError"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="participation" class="form-label">
+                        Type de participation
+                    </label>
+
+                    <select id="participation" class="form-select">
+
+                        <option value="">Sélectionnez</option>
+                        <option>Participant</option>
+                        <option>Intervenant</option>
+                        <option>Sponsor</option>
+                        <option>Presse</option>
+
+                    </select>
+
+                    <small class="form-error" id="participationError"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="country" class="form-label">
+                        Pays
+                    </label>
+
+                    <select id="country" class="form-select">
+
+                        <option value="">Choisissez votre pays</option>
+                        <option>Sénégal</option>
+                        <option>Côte d'Ivoire</option>
+                        <option>Ghana</option>
+                        <option>Gabon</option>
+                        <option>Kenya</option>
+                        <option>Mozambique</option>
+                        <option>Guinèe</option>
+                        <option>CapVert</option>
+                        <option>Mali</option>
+                        <option>Togo</option>
+                        <option>Bénin</option>
+                        <option>Gambie</option>
+                        <option>Burkina Faso</option>
+                        <option>Egypte</option>
+
+                    </select>
+
+                    <small class="form-error" id="countryError"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message" class="form-label">
+                        Motivation
+                    </label>
+
+                    <textarea
+                        id="message"
+                        class="form-textarea"
+                        rows="6"
+                    ></textarea>
+
+                    <small class="form-error" id="messageError"></small>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="form-button"
+                    id="submitButton">
+
+                    Envoyer l'inscription
+
+                </button>
+
+                <div class="form-success" id="formSuccess"></div>
+
+            </form>
+
+        </div>
+
+        <!-- Informations -->
+        <aside class="registration__info">
+
+            <h2 class="section-title">
+                Informations
+            </h2>
+
+            <div class="info-card">
+
+                <h3 class="info-title">
+                    📍 Adresse
+                </h3>
+
+                <p class="info-text">
+                    Centre International de Conférence<br>
+                    Dakar, Sénégal 
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3 class="info-title">
+                    📧 Email
+                </h3>
+
+                <p class="info-text">
+                    contact@africonnectsn.com
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3 class="info-title">
+                    📞 Téléphone
+                </h3>
+
+                <p class="info-text">
+                    +221 77 334 65 89
+                </p>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+<!-- 
+     FAQ
+ -->
+<section class="faq" id="faq">
+
+    <div class="faq__container">
+
+        <h2 class="section-title">
+            Questions fréquentes
+        </h2>
+
+        <div class="faq-item">
+
+            <input type="checkbox" id="faq1" class="faq-checkbox">
+
+            <label for="faq1" class="faq-question">
+                Comment s'inscrire ?
+            </label>
+
+            <div class="faq-answer">
+                <p>Complétez le formulaire d'inscription puis validez votre demande.</p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <input type="checkbox" id="faq2" class="faq-checkbox">
+
+            <label for="faq2" class="faq-question">
+                L'événement est-il payant ?
+            </label>
+
+            <div class="faq-answer">
+                <p>Certaines formules sont gratuites, d'autres sont premium.</p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <input type="checkbox" id="faq3" class="faq-checkbox">
+
+            <label for="faq3" class="faq-question">
+                Puis-je devenir sponsor ?
+            </label>
+
+            <div class="faq-answer">
+                <p>Oui, contactez notre équipe pour recevoir le dossier de sponsoring.</p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <input type="checkbox" id="faq4" class="faq-checkbox">
+
+            <label for="faq4" class="faq-question">
+                Recevrai-je un certificat ?
+            </label>
+
+            <div class="faq-answer">
+                <p>Chaque participant recevra un certificat de participation.</p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <input type="checkbox" id="faq5" class="faq-checkbox">
+
+            <label for="faq5" class="faq-question">
+                Comment contacter l'organisation ?
+            </label>
+
+            <div class="faq-answer">
+                <p>Vous pouvez nous écrire par email ou nous appeler directement.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 
+     GOOGLE MAPS
+-->
+<section class="map" id="map">
+
+    <div class="map__container">
+
+        <h2 class="section-title">
+            Nous trouver
+        </h2>
+
+        <div class="map-frame">
+
+            <iframe
+                class="map-iframe"
+                title="Localisation"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
     <script src="js/main.js"></script>
 </body>
 </html>
+    

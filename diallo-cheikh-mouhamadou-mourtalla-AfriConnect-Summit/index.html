@@ -1,12 +1,351 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriConnect Summit</title>
+    <title>AfriConnectSummit</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+     <header class="header" id="header">
+
+    <nav class="navbar" id="navbar">
+
+        <!-- Logo -->
+        <div class="navbar__logo">
+
+            <a href="index.html" class="logo-link">
+                <span class="logo-text">
+                    AfriConnect Summit 
+                </span>
+            </a>
+
+        </div>
+
+        <!-- Navigation -->
+        <ul class="navbar__menu" id="navbarMenu">
+
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link active">Accueil</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="programme.html" class="navbar__link">Programme</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="intervenants.html" class="navbar__link">Intervenants</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="contact.html" class="navbar__link">Contact</a>
+            </li>
+
+        </ul>
+
+        <!-- Actions -->
+        <div class="navbar__actions">
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Changer le thème">
+                🌙
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Ouvrir le menu">
+                ☰
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+             <!-- 
+     HERO SECTION
+ -->
+<section class="hero" id="hero">
+
+    <div class="hero__container">
+
+        <div class="hero__content">
+
+            <span class="hero__badge">
+                Conférence Tech & Innovation
+            </span>
+
+            <h1 class="hero__title">
+                Connectons l'Afrique aux technologies de demain.
+            </h1>
+
+            <p class="hero__subtitle">
+                Dakar, Sénégal • 16 au 19 juillet 2026
+            </p>
+
+            <div class="hero__buttons">
+
+                <a href="inscription.html" class="btn btn-primary">
+                    S'inscrire
+                </a>
+
+                <a href="programme.html" class="btn btn-secondary">
+                    Voir le programme
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero__countdown">
+
+            <h2 class="countdown__title">
+                Début de la conférence dans
+            </h2>
+
+            <div class="countdown" id="countdown">
+
+                <div class="countdown__box">
+                    <span class="countdown__number" id="days">00</span>
+                    <span class="countdown__label">Jours</span>
+                </div>
+
+                <div class="countdown__box">
+                    <span class="countdown__number" id="hours">00</span>
+                    <span class="countdown__label">Heures</span>
+                </div>
+
+                <div class="countdown__box">
+                    <span class="countdown__number" id="minutes">00</span>
+                    <span class="countdown__label">Minutes</span>
+                </div>
+
+                <div class="countdown__box">
+                    <span class="countdown__number" id="seconds">00</span>
+                    <span class="countdown__label">Secondes</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--
+     CHIFFRES CLÉS
+-->
+<section class="stats" id="stats">
+
+    <div class="section-heading">
+        <h2 class="section-title">Chiffres clés</h2>
+    </div>
+
+    <div class="stats__grid">
+
+        <article class="stat-card">
+            <h3 class="stat-number" id="participants">1000</h3>
+            <p class="stat-label">Participants</p>
+        </article>
+
+        <article class="stat-card">
+            <h3 class="stat-number" id="speakers">18</h3>
+            <p class="stat-label">Intervenants</p>
+        </article>
+
+        <article class="stat-card">
+            <h3 class="stat-number" id="daysEvent">3</h3>
+            <p class="stat-label">Jours</p>
+        </article>
+
+        <article class="stat-card">
+            <h3 class="stat-number" id="countries">14</h3>
+            <p class="stat-label">Pays représentés</p>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- 
+     POURQUOI PARTICIPER
+ -->
+<section class="benefits" id="benefits">
+
+    <div class="section-heading">
+        <h2 class="section-title">Pourquoi participer ?</h2>
+    </div>
+
+    <div class="benefits__container">
+
+        <article class="benefit-card">
+            <div class="benefit-icon">💡</div>
+            <h3 class="benefit-title">Innovation</h3>
+            <p class="benefit-description">
+                Découvrez les dernières tendances technologiques.
+            </p>
+        </article>
+
+        <article class="benefit-card">
+            <div class="benefit-icon">🤝</div>
+            <h3 class="benefit-title">Networking</h3>
+            <p class="benefit-description">
+                Rencontrez des experts et entrepreneurs africains.
+            </p>
+        </article>
+
+        <article class="benefit-card">
+            <div class="benefit-icon">🚀</div>
+            <h3 class="benefit-title">Opportunités</h3>
+            <p class="benefit-description">
+                Développez vos compétences et votre carrière.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- 
+     INTERVENANTS VEDETTES
+ -->
+<section class="featured-speakers" id="featuredSpeakers">
+
+    <div class="section-heading">
+        <h2 class="section-title">Intervenants vedettes</h2>
+    </div>
+
+    <div class="speakers__grid">
+
+        <article class="speaker-card">
+            <img src="images/speaker1.jpg" alt="Intervenant 1" class="speaker-image">
+            <h3 class="speaker-name">Mouhamed Diallo</h3>
+            <p class="speaker-role">Expert IA</p>
+            <span class="speaker-country">🇸🇳 Sénégal</span>
+        </article>
+
+        <article class="speaker-card">
+            <img src="images/speaker2.jpg" alt="Intervenant 2" class="speaker-image">
+            <h3 class="speaker-name"></h3> Alexandro Moreira
+            <p class="speaker-role">CEO TechNova</p>
+            <span class="speaker-country">Cv cap vert</span>
+        </article>
+
+        <article class="speaker-card">
+            <img src="images/speaker3.jpg" alt="Intervenant 3" class="speaker-image">
+            <h3 class="speaker-name">Fatima diop</h3>
+            <p class="speaker-role">Data Scientist</p>
+            <span class="speaker-country">🇸🇳 Sénégal</span>
+        </article>
+
+        <article class="speaker-card">
+            <img src="images/speaker4.jpg" alt="Intervenant 4" class="speaker-image">
+            <h3 class="speaker-name">Amadou keita</h3>
+            <p class="speaker-role">Cloud Engineer</p>
+            <span class="speaker-country">Gb Gabon</span>
+        </article>
+
+    </div>
+
+    <div class="speakers__action">
+        <a href="intervenants.html" class="btn btn-primary">
+            Voir tous les intervenants
+        </a>
+    </div>
+
+</section>
+
+<!-- 
+     SPONSORS
+-->
+<section class="sponsors" id="sponsors">
+
+    <div class="section-heading">
+        <h2 class="section-title">Nos Sponsors</h2>
+    </div>
+
+    <div class="sponsors__container">
+
+        <div class="sponsor sponsor--gold">
+            <h3>🥇 Sponsor Or</h3>
+        </div>
+
+        <div class="sponsor sponsor--silver">
+            <h3>🥈 Sponsor Argent</h3>
+        </div>
+
+        <div class="sponsor sponsor--bronze">
+            <h3>🥉 Sponsor Bronze</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!--
+     FOOTER
+ -->
+<footer class="footer" id="footer">
+
+    <div class="footer__container">
+
+        <div class="footer__column">
+            <h3>AfriConnect Summit 2026</h3>
+            <p>Le rendez-vous incontournable de la Tech en Afrique.</p>
+        </div>
+
+        <div class="footer__column">
+            <h3>Liens rapides</h3>
+
+            <ul class="footer__links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer__column">
+
+            <h3>Suivez-nous</h3>
+
+            <div class="social-links">
+
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">X</a>
+                <a href="#" class="social-link">Instagram</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+
+        <p>
+            © <span id="currentYear"></span> AfriConnect Summit 2026.
+            Tous droits réservés.
+        </p>
+
+        <button class="back-to-top" id="backToTop">
+            ↑
+        </button>
+
+    </div>
+
+</footer>
     <script src="js/main.js"></script>
 </body>
 </html>
+    

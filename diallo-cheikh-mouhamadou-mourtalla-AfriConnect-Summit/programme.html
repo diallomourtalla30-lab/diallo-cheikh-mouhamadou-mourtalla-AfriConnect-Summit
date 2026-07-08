@@ -1,12 +1,384 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriConnect Summit</title>
+    <title>AfriConnectSummit</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="js/main.js"></script>
+    <header class="header" id="header">
+
+    <nav class="navbar" id="navbar">
+
+        <!-- Logo -->
+        <div class="navbar__logo">
+
+            <a href="index.html" class="logo-link">
+                <span class="logo-text">
+                    AfriConnect Summit 
+                </span>
+            </a>
+
+        </div>
+
+        <!-- Navigation -->
+        <ul class="navbar__menu" id="navbarMenu">
+
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link active">Accueil</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="programme.html" class="navbar__link">Programme</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="intervenants.html" class="navbar__link">Intervenants</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="contact.html" class="navbar__link">Contact</a>
+            </li>
+
+        </ul>
+
+        <!-- Actions -->
+        <div class="navbar__actions">
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Changer le thème">
+                🌙
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Ouvrir le menu">
+                ☰
+            </button>
+
+        </div>
+
+    </nav>
+</header>
+<!-- 
+     HERO INTERNE
+ -->
+<section class="page-hero" id="pageHero">
+
+    <div class="page-hero__container">
+
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="index.html" class="breadcrumb__link">Accueil</a>
+            <span class="breadcrumb__separator">&gt;</span>
+            <span class="breadcrumb__current">Programme</span>
+        </nav>
+
+        <h1 class="page-hero__title">
+            Programme du Sommet
+        </h1>
+
+    </div>
+
+</section>
+
+<!-- 
+     PROGRAMME DES 3 JOURS
+ -->
+<section class="programme" id="programme">
+
+    <div class="programme__container">
+
+        <div class="programme__header">
+
+            <h2 class="programme__title">
+                Planning des conférences
+            </h2>
+
+            <div class="programme__tabs">
+
+                <button class="programme__tab programme__tab--active" id="tabDay1">
+                    1ère Journèe
+                </button>
+
+                <button class="programme__tab" id="tabDay2">
+                    2ème Journèe
+                </button>
+
+                <button class="programme__tab" id="tabDay3">
+                    3ème Journèe
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- JOUR 1 -->
+        <div class="programme__content programme__content--active" id="day1">
+
+            <table class="programme__table">
+
+                <thead>
+
+                    <tr>
+                        <th>Heure</th>
+                        <th>Thème</th>
+                        <th>Confèrencier</th>
+                        <th>Espace</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>10:00</td>
+                        <td>Ouverture officielle</td>
+                        <td>Mouhamed Diallo</td>
+                        <td>AS 11</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00</td>
+                        <td>l'IA</td>
+                        <td>Adama Panz</td>
+                        <td>Salle 15</td>
+                    </tr>
+
+                    <tr>
+                        <td>12:00</td>
+                        <td>Pause </td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:00</td>
+                        <td>Cloud </td>
+                        <td>Renè Black</td>
+                        <td>Salle 33</td>
+                    </tr>
+
+                    <tr>
+                        <td>14:00</td>
+                        <td>Questions & Réponses</td>
+                        <td>Tous</td>
+                        <td>Salle 33</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- JOUR 2 -->
+        <div class="programme__content" id="day2">
+
+            <table class="programme__table">
+
+                <thead>
+
+                    <tr>
+                        <th>Heure</th>
+                        <th>Thème</th>
+                        <th>Confèrencier</th>
+                        <th>Espace</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>10:00</td>
+                        <td>Cybersécurité</td>
+                        <td>Fatou Ndiaye</td>
+                        <td>Salle A31</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00</td>
+                        <td>Data Science</td>
+                        <td>Paul Manè</td>
+                        <td>Salle A31</td>
+                    </tr>
+
+                    <tr>
+                        <td>12:00</td>
+                        <td>Pause déjeuner</td>
+                        <td>-</td>
+                        <td>Restaurant</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:00</td>
+                        <td>Développement Web</td>
+                        <td>Moustapha Fall</td>
+                        <td>Salle A41</td>
+                    </tr>
+
+                    <tr>
+                        <td>14:30</td>
+                        <td>Discussion</td>
+                        <td>Invités</td>
+                        <td>Grande Salle</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- JOUR 3 -->
+        <div class="programme__content" id="day3">
+
+            <table class="programme__table">
+
+                <thead>
+
+                    <tr>
+                        <th>Heure</th>
+                        <th>Thème</th>
+                        <th>Confèrencier</th>
+                        <th>Espace</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>10:00</td>
+                        <td>Innovation Africaine</td>
+                        <td>Issa Travis</td>
+                        <td>Salle 1</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:30</td>
+                        <td>Startups Africaines</td>
+                        <td>Bakary Sagna</td>
+                        <td>Salle 1</td>
+                    </tr>
+
+                    <tr>
+                        <td>12:30</td>
+                        <td>Pause déjeuner</td>
+                        <td>-</td>
+                        <td>Restaurant</td>
+                    </tr>
+
+                    <tr>
+                        <td>14:00</td>
+                        <td>Leadership Digital</td>
+                        <td>Amary Moussa</td>
+                        <td>Salle 11</td>
+                    </tr>
+
+                    <tr>
+                        <td>15:00</td>
+                        <td>Cérémonie de clôture</td>
+                        <td>Organisation</td>
+                        <td>Grande Salle</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 
+     THÉMATIQUES
+ -->
+<section class="themes" id="themes">
+
+    <div class="themes__container">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Thématiques de la conférence
+            </h2>
+
+        </div>
+
+        <div class="themes__grid">
+
+            <article class="theme-card">
+
+                <div class="theme-card__icon">🤖</div>
+
+                <h3 class="theme-card__title">
+                    Intelligence Artificielle
+                </h3>
+
+                <p class="theme-card__description">
+                    Les innovations de l'IA au service de l'Afrique.
+                </p>
+
+            </article>
+
+            <article class="theme-card">
+
+                <div class="theme-card__icon">☁️</div>
+
+                <h3 class="theme-card__title">
+                    Cloud Computing
+                </h3>
+
+                <p class="theme-card__description">
+                    Les infrastructures numériques modernes.
+                </p>
+
+            </article>
+
+            <article class="theme-card">
+
+                <div class="theme-card__icon">🔒</div>
+
+                <h3 class="theme-card__title">
+                    Cybersécurité
+                </h3>
+
+                <p class="theme-card__description">
+                    Sécuriser les systèmes et les données.
+                </p>
+
+            </article>
+
+            <article class="theme-card">
+
+                <div class="theme-card__icon">🚀</div>
+
+                <h3 class="theme-card__title">
+                    Entrepreneuriat Tech
+                </h3>
+
+                <p class="theme-card__description">
+                    Encourager les startups et l'innovation.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+ <script src="js/main.js"></script>
 </body>
 </html>
+    
