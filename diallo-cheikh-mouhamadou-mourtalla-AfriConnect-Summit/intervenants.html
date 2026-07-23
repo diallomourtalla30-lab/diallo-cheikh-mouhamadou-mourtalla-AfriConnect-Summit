@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -102,249 +101,107 @@
 </div>
 </section>
 <!-- 
-     FILTRE DES INTERVENANTS
--->
-<section class="speakers-filter" id="speakersFilter">
-
-    <div class="speakers-filter__container">
-
-        <h2 class="section-title">
-            Filtrer par thématique
-        </h2>
-
-        <div class="filter-buttons">
-
-            <button class="filter-button filter-button--active" id="filterAll" data-filter="all">
-                Tous
-            </button>
-
-            <button class="filter-button" id="filterAI" data-filter="ia">
-                IA & Tech
-            </button>
-
-            <button class="filter-button" id="filterBusiness" data-filter="business">
-                Business
-            </button>
-
-            <button class="filter-button" id="filterDesign" data-filter="design">
-                Design
-            </button>
-
-            <button class="filter-button" id="filterData" data-filter="data">
-                Data
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 
      GRILLE DES INTERVENANTS
  -->
 <section class="speakers" id="speakers">
 
     <div class="speakers__container">
 
+        <div class="speakers__header">
+            <span class="speakers__tag">Nos intervenants</span>
+            <h2 class="speakers__title">Ils font la conférence</h2>
+            <p class="speakers__subtitle">Filtrez par thématique pour découvrir nos experts venus de tout le continent.</p>
+        </div>
+
+        <div class="speakers__filters">
+            <button class="filter-btn is-active" data-filter="tous">Tous</button>
+            <button class="filter-btn" data-filter="ia">IA &amp; Tech</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="data">Data</button>
+        </div>
+
         <div class="speakers__grid">
 
             <article class="speaker-card" data-category="ia">
-
                 <img src="images/speaker1.jpeg" alt="Mouhamed Diallo" class="speaker-card__image">
-
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        Mouhamed Diallo
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        Expert en Intelligence Artificielle
-                    </p>
-
-                    <span class="speaker-card__country">
-                        🇸🇳 Sénégal
-                    </span>
-
+                    <h3 class="speaker-card__name">Mouhamed Diallo</h3>
+                    <p class="speaker-card__speciality">Expert en Intelligence Artificielle</p>
+                    <span class="speaker-card__country">🇸🇳 Sénégal</span>
                 </div>
-
             </article>
 
             <article class="speaker-card" data-category="business">
-
-                <img src="images/speaker2.jpeg" alt=" Alexandro Moreira" class="speaker-card__image">
-
+                <img src="images/speaker2.jpeg" alt="Alexandro Moreira" class="speaker-card__image">
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        Alexandro Moreira
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        Entrepreneur Tech
-                    </p>
-
-                    <span class="speaker-card__country">
-                        cv Cap Vert
-                    </span>
-
+                    <h3 class="speaker-card__name">Alexandro Moreira</h3>
+                    <p class="speaker-card__speciality">Entrepreneur Tech</p>
+                    <span class="speaker-card__country">🇨🇻 Cap Vert</span>
                 </div>
-
             </article>
 
             <article class="speaker-card" data-category="design">
-
-                <img src="images/speaker3.jpeg" alt=" Fatima Diop" class="speaker-card__image">
-
+                <img src="images/speaker3.jpeg" alt="Fatima Diop" class="speaker-card__image">
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        Fatima Diop
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        UX/UI Designer
-                    </p>
-
-                    <span class="speaker-card__country">
-                        🇸🇳 Sénégal
-                    </span>
-
+                    <h3 class="speaker-card__name">Fatima Diop</h3>
+                    <p class="speaker-card__speciality">UX/UI Designer</p>
+                    <span class="speaker-card__country">🇸🇳 Sénégal</span>
                 </div>
-
             </article>
 
             <article class="speaker-card" data-category="data">
-
-                <img src="images/speaker4.jpeg" alt=" Amadou Keita" class="speaker-card__image">
-
+                <img src="images/speaker4.jpeg" alt="Amadou Keita" class="speaker-card__image">
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        Amadou Keita
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        Data Scientist
-                    </p>
-
-                    <span class="speaker-card__country">
-                         🇬🇦 Gabon
-                    </span>
-
+                    <h3 class="speaker-card__name">Amadou Keita</h3>
+                    <p class="speaker-card__speciality">Data Scientist</p>
+                    <span class="speaker-card__country">🇬🇦 Gabon</span>
                 </div>
-
             </article>
 
             <article class="speaker-card" data-category="ia">
-
-                <img src="images/speaker5.jpeg" alt="ocèane Kouamè" class="speaker-card__image">
-
+                <img src="images/speaker5.jpeg" alt="Océane Kouamè" class="speaker-card__image">
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        ocèane Kouamè
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        Ingénieure Logicielle
-                    </p>
-
-                    <span class="speaker-card__country">
-                        🇨🇮 Côte d'Ivoire
-                    </span>
-
+                    <h3 class="speaker-card__name">Océane Kouamè</h3>
+                    <p class="speaker-card__speciality">Ingénieure Logicielle</p>
+                    <span class="speaker-card__country">🇨🇮 Côte d'Ivoire</span>
                 </div>
-
             </article>
 
             <article class="speaker-card" data-category="business">
-
                 <img src="images/speaker6.jpeg" alt="Boubacar Diabatè" class="speaker-card__image">
-
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        Boubacar Diabatè
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        Investisseur Startup
-                    </p>
-
-                    <span class="speaker-card__country">
-                         🇲🇱 Mali
-                    </span>
-
+                    <h3 class="speaker-card__name">Boubacar Diabatè</h3>
+                    <p class="speaker-card__speciality">Investisseur Startup</p>
+                    <span class="speaker-card__country">🇲🇱 Mali</span>
                 </div>
-
             </article>
 
             <article class="speaker-card" data-category="design">
-
                 <img src="images/speaker7.jpeg" alt="Aissatou Ba" class="speaker-card__image">
-
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        Aissatou Ba
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        Product Designer
-                    </p>
-
-                    <span class="speaker-card__country">
-                         🇬🇳  Guinèe
-                    </span>
-
+                    <h3 class="speaker-card__name">Aissatou Ba</h3>
+                    <p class="speaker-card__speciality">Product Designer</p>
+                    <span class="speaker-card__country">🇬🇳 Guinée</span>
                 </div>
-
             </article>
 
             <article class="speaker-card" data-category="data">
-
                 <img src="images/speaker8.jpeg" alt="Seko Sangarè" class="speaker-card__image">
-
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        Seko Sangarè
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        Analyste Data
-                    </p>
-
-                    <span class="speaker-card__country">
-                         🇲🇿  Mozambique
-                    </span>
-
+                    <h3 class="speaker-card__name">Seko Sangarè</h3>
+                    <p class="speaker-card__speciality">Analyste Data</p>
+                    <span class="speaker-card__country">🇲🇿 Mozambique</span>
                 </div>
-
             </article>
 
             <article class="speaker-card" data-category="ia">
-
-                <img src="images/speaker9.jpeg" alt=" Fatou Timèra" class="speaker-card__image">
-
+                <img src="images/speaker9.jpeg" alt="Fatou Timèra" class="speaker-card__image">
                 <div class="speaker-card__content">
-
-                    <h3 class="speaker-card__name">
-                        Fatou Timèra
-                    </h3>
-
-                    <p class="speaker-card__speciality">
-                        Chercheuse en Robotique
-                    </p>
-
-                    <span class="speaker-card__country">
-                         🇬🇲 Gambie
-                    </span>
-
+                    <h3 class="speaker-card__name">Fatou Timèra</h3>
+                    <p class="speaker-card__speciality">Chercheuse en Robotique</p>
+                    <span class="speaker-card__country">🇬🇲 Gambie</span>
                 </div>
-
             </article>
 
         </div>
@@ -410,4 +267,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-    

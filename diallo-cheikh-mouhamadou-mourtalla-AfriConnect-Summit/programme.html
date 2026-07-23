@@ -112,296 +112,121 @@
 
 </section>
 
-<!-- 
-     PROGRAMME DES 3 JOURS
- -->
-<section class="programme" id="programme">
+<!-- ===================== ONGLETS 3 JOURS ===================== -->
+  <section class="schedule">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">12 – 14 novembre 2026</span>
+        <h2>Trois jours, trois univers</h2>
+        <p>Sélectionnez un jour pour découvrir les sessions, les intervenants et les salles associées.</p>
+      </div>
 
-    <div class="programme__container">
+      <div class="tabs-bar reveal" role="tablist">
+        <button class="tab-btn active" data-tab-target="jour1" role="tab" aria-selected="true">Jour 1 · Fondations</button>
+        <button class="tab-btn" data-tab-target="jour2" role="tab" aria-selected="false">Jour 2 · Croissance</button>
+        <button class="tab-btn" data-tab-target="jour3" role="tab" aria-selected="false">Jour 3 · Avenir</button>
+      </div>
 
-        <div class="programme__header">
-
-            <h2 class="programme__title">
-                Planning des conférences
-            </h2>
-
-            <div class="programme__tabs">
-
-                <button class="programme__tab programme__tab--active" id="tabDay1">
-                    1ère Journèe
-                </button>
-
-                <button class="programme__tab" id="tabDay2">
-                    2ème Journèe
-                </button>
-
-                <button class="programme__tab" id="tabDay3">
-                    3ème Journèe
-                </button>
-
-            </div>
-
+      <!-- JOUR 1 -->
+      <article id="jour1" class="tab-panel active">
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="session-time">08h30 – 09h15</td><td>Accueil &amp; café networking</td><td>Équipe AfriConnect</td><td>Hall Principal</td></tr>
+              <tr><td class="session-time">09h30 – 10h15</td><td>Keynote d'ouverture : l'Afrique connectée</td><td>Amina Diallo</td><td>Salle K1</td></tr>
+              <tr><td class="session-time">10h30 – 11h15</td><td>L'IA au service des PME africaines</td><td>Daniel Otieno</td><td>Grande salle</td></tr>
+              <tr><td class="session-time">11h30 – 12h15</td><td>Construire une fintech panafricaine</td><td>Kwame Mensah</td><td>Salle K1</td></tr>
+              <tr><td class="session-time">14h00 – 14h45</td><td>Design systems pour marchés émergents</td><td>Fatou Cissé</td><td>Salle A1</td></tr>
+              <tr><td class="session-time">15h00 – 16h00</td><td>Table ronde : financer l'innovation locale</td><td>Panel d'investisseurs</td><td>Salle K1</td></tr>
+            </tbody>
+          </table>
         </div>
+      </article>
 
-        <!-- JOUR 1 -->
-        <div class="programme__content programme__content--active" id="day1">
-
-            <table class="programme__table">
-
-                <thead>
-
-                    <tr>
-                        <th>Heure</th>
-                        <th>Thème</th>
-                        <th>Confèrencier</th>
-                        <th>Espace</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>10:00</td>
-                        <td>Ouverture officielle</td>
-                        <td>Mouhamed Diallo</td>
-                        <td>AS 11</td>
-                    </tr>
-
-                    <tr>
-                        <td>11:00</td>
-                        <td>l'IA</td>
-                        <td>Adama Panz</td>
-                        <td>Salle 15</td>
-                    </tr>
-
-                    <tr>
-                        <td>12:00</td>
-                        <td>Pause </td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-
-                    <tr>
-                        <td>13:00</td>
-                        <td>Cloud </td>
-                        <td>Renè Black</td>
-                        <td>Salle 33</td>
-                    </tr>
-
-                    <tr>
-                        <td>14:00</td>
-                        <td>Questions & Réponses</td>
-                        <td>Tous</td>
-                        <td>Salle 33</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
+      <!-- JOUR 2 -->
+      <article id="jour2" class="tab-panel">
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="session-time">09h00 – 09h45</td><td>Scaler une startup à travers 5 pays</td><td>Zanele Nkosi</td><td>Salle K1</td></tr>
+              <tr><td class="session-time">10h00 – 10h45</td><td>Data governance : les bonnes pratiques</td><td>Daniel Otieno</td><td>grande salle</td></tr>
+              <tr><td class="session-time">11h00 – 11h45</td><td>Atelier : pitch deck qui convainc</td><td>Aïcha Traoré</td><td>Salle A1</td></tr>
+              <tr><td class="session-time">13h30 – 14h15</td><td>Cybersécurité pour les fintechs</td><td>Yusuf Bello</td><td>Salle 8</td></tr>
+              <tr><td class="session-time">14h30 – 15h15</td><td>UX Research en contexte multilingue</td><td>Fatou Cissé</td><td>Salle A2</td></tr>
+              <tr><td class="session-time">15h30 – 16h30</td><td>Speed networking investisseurs / startups</td><td>Équipe AfriConnect</td><td>Hall Principal</td></tr>
+            </tbody>
+          </table>
         </div>
+      </article>
 
-        <!-- JOUR 2 -->
-        <div class="programme__content" id="day2">
-
-            <table class="programme__table">
-
-                <thead>
-
-                    <tr>
-                        <th>Heure</th>
-                        <th>Thème</th>
-                        <th>Confèrencier</th>
-                        <th>Espace</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>10:00</td>
-                        <td>Cybersécurité</td>
-                        <td>Fatou Ndiaye</td>
-                        <td>Salle A31</td>
-                    </tr>
-
-                    <tr>
-                        <td>11:00</td>
-                        <td>Data Science</td>
-                        <td>Paul Manè</td>
-                        <td>Salle A31</td>
-                    </tr>
-
-                    <tr>
-                        <td>12:00</td>
-                        <td>Pause déjeuner</td>
-                        <td>-</td>
-                        <td>Restaurant</td>
-                    </tr>
-
-                    <tr>
-                        <td>13:00</td>
-                        <td>Développement Web</td>
-                        <td>Moustapha Fall</td>
-                        <td>Salle A41</td>
-                    </tr>
-
-                    <tr>
-                        <td>14:30</td>
-                        <td>Discussion</td>
-                        <td>Invités</td>
-                        <td>Grande Salle</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
+      <!-- JOUR 3 -->
+      <article id="jour3" class="tab-panel">
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="session-time">09h00 – 09h45</td><td>L'énergie verte comme levier tech</td><td>Chidi Okafor</td><td>Salle K1</td></tr>
+              <tr><td class="session-time">10h00 – 10h45</td><td>Femmes leaders de la tech africaine</td><td>Zanele Nkosi</td><td>grande salle</td></tr>
+              <tr><td class="session-time">11h00 – 11h45</td><td>De l'idée au produit en 90 jours</td><td>Kwame Mensah</td><td>Salle C3</td></tr>
+              <tr><td class="session-time">13h30 – 14h30</td><td>Finale du concours de pitchs</td><td>Panel d'investisseurs</td><td>Salle K1</td></tr>
+              <tr><td class="session-time">14h45 – 15h30</td><td>Clôture : les 10 prochaines années</td><td>Amina Diallo</td><td>Salle A1</td></tr>
+              <tr><td class="session-time">15h30 – 17h00</td><td>Cocktail de clôture &amp; networking</td><td>Équipe AfriConnect</td><td>Hall Principal</td></tr>
+            </tbody>
+          </table>
         </div>
-
-        <!-- JOUR 3 -->
-        <div class="programme__content" id="day3">
-
-            <table class="programme__table">
-
-                <thead>
-
-                    <tr>
-                        <th>Heure</th>
-                        <th>Thème</th>
-                        <th>Confèrencier</th>
-                        <th>Espace</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>10:00</td>
-                        <td>Innovation Africaine</td>
-                        <td>Issa Travis</td>
-                        <td>Salle 1</td>
-                    </tr>
-
-                    <tr>
-                        <td>11:30</td>
-                        <td>Startups Africaines</td>
-                        <td>Bakary Sagna</td>
-                        <td>Salle 1</td>
-                    </tr>
-
-                    <tr>
-                        <td>12:30</td>
-                        <td>Pause déjeuner</td>
-                        <td>-</td>
-                        <td>Restaurant</td>
-                    </tr>
-
-                    <tr>
-                        <td>14:00</td>
-                        <td>Leadership Digital</td>
-                        <td>Amary Moussa</td>
-                        <td>Salle 11</td>
-                    </tr>
-
-                    <tr>
-                        <td>15:00</td>
-                        <td>Cérémonie de clôture</td>
-                        <td>Organisation</td>
-                        <td>Grande Salle</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
-
+      </article>
     </div>
+  </section>
 
-</section>
+  <!-- ===================== THÉMATIQUES (GRID 2x2) ===================== -->
+  <section class="themes">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Ce dont on parle</span>
+        <h2>Quatre thématiques structurantes</h2>
+      </div>
 
-<!-- 
-     THÉMATIQUES
- -->
-<section class="themes" id="themes">
-
-    <div class="themes__container">
-
-        <div class="section-header">
-
-            <h2 class="section-title">
-                Thématiques de la conférence
-            </h2>
-
-        </div>
-
-        <div class="themes__grid">
-
-            <article class="theme-card">
-
-                <div class="theme-card__icon">🤖</div>
-
-                <h3 class="theme-card__title">
-                    Intelligence Artificielle
-                </h3>
-
-                <p class="theme-card__description">
-                    Les innovations de l'IA au service de l'Afrique.
-                </p>
-
-            </article>
-
-            <article class="theme-card">
-
-                <div class="theme-card__icon">☁️</div>
-
-                <h3 class="theme-card__title">
-                    Cloud Computing
-                </h3>
-
-                <p class="theme-card__description">
-                    Les infrastructures numériques modernes.
-                </p>
-
-            </article>
-
-            <article class="theme-card">
-
-                <div class="theme-card__icon">🔒</div>
-
-                <h3 class="theme-card__title">
-                    Cybersécurité
-                </h3>
-
-                <p class="theme-card__description">
-                    Sécuriser les systèmes et les données.
-                </p>
-
-            </article>
-
-            <article class="theme-card">
-
-                <div class="theme-card__icon">🚀</div>
-
-                <h3 class="theme-card__title">
-                    Entrepreneuriat Tech
-                </h3>
-
-                <p class="theme-card__description">
-                    Encourager les startups et l'innovation.
-                </p>
-
-            </article>
-
-        </div>
-
+      <div class="themes-grid">
+        <article class="theme-card reveal">
+         <div class="theme-icon">🤖</div> 
+          <div>
+            <h3>Intelligence Artificielle</h3>
+            <p>Applications concrètes de l'IA pour l'agriculture, la santé et les services financiers africains.</p>
+          </div>
+        </article>
+        <article class="theme-card reveal">
+          <div class="theme-icon">📈</div>
+          <div>
+            <h3>Business &amp; Croissance</h3>
+            <p>Stratégies de financement, d'expansion régionale et de gouvernance pour scaler durablement.</p>
+          </div>
+        </article>
+        <article class="theme-card reveal">
+          <div class="theme-icon">🎨</div>
+          <div>
+            <h3>Design &amp; Expérience</h3>
+            <p>Concevoir des produits pensés pour la diversité linguistique et culturelle du continent.</p>
+          </div>
+        </article>
+        <article class="theme-card reveal">
+         <div class="theme-icon">📊</div> 
+          <div>
+            <h3>Data &amp; Infrastructure</h3>
+            <p>Souveraineté des données, cloud local et infrastructures résilientes pour l'avenir numérique.</p>
+          </div>
+        </article>
+      </div>
     </div>
-
-</section>
+  </section>
+</main>
 <!--
      FOOTER
  -->
