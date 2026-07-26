@@ -135,7 +135,7 @@ function animateValue(id,endValue){
 }
 
 animateValue("participants",1000);
-animateValue("speakers",18);
+animateValue("speakersCount",18);
 animateValue("daysEvent",3);
 animateValue("countries",14);
 
@@ -241,19 +241,35 @@ form.reset();
 
 //  NAVBAR AU SCROLL
 
-
 window.addEventListener("scroll",()=>{
 
-const navbar=document.querySelector(".navbar");
+const header=document.querySelector(".header");
 
 if(window.scrollY>50){
 
-navbar.classList.add("navbar-scroll");
+header.classList.add("navbar-scroll");
 
 }else{
 
-navbar.classList.remove("navbar-scroll");
+header.classList.remove("navbar-scroll");
 
 }
 
 });
+
+
+// window.addEventListener("scroll",()=>{
+
+// const navbar=document.querySelector(".navbar");
+
+// if(window.scrollY>50){
+
+// navbar.classList.add("navbar-scroll");
+
+// }else{
+
+// navbar.classList.remove("navbar-scroll");
+
+// }
+
+// });
